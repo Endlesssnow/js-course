@@ -1,5 +1,5 @@
-function drawTriangle(){
-	var height = prompt('Введите высоту: ');
+function drawTriangle(height){
+	// var height = prompt('Введите высоту: ');
 	var str = '';
 		for (var i = 0; i < height - 1; i++){
 			str += ' '.repeat(height - 1 - i) + '/' + ' '.repeat(2 * i) + '\\\n';
@@ -9,8 +9,8 @@ function drawTriangle(){
 }
 
 
-function drawRomb(){
-	var height = prompt('Введите высоту: ');
+function drawRomb(height){
+	// var height = prompt('Введите высоту: ');
 	var str = '';
 		for (var i = 0; i < height; i++){
 			str += ' '.repeat(height - 1 - i) + '/' + ' '.repeat(2 * i) + '\\\n';
