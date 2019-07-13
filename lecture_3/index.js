@@ -7,7 +7,7 @@ var ctntLevel1 = document.querySelector('#level1-content');
 var ctntLevel2 = document.querySelector('#level2-content');
 var ctntLevel3 = document.querySelector('#level3-content');
 
-ctntLevel1.style.display = 'block';
+ctntLevel1.style.display = 'none';
 ctntLevel2.style.display = 'none';
 ctntLevel3.style.display = 'none';
 
