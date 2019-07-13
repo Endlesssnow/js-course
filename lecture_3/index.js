@@ -1,7 +1,7 @@
 var btnLevel1 = document.querySelector('#btnlevel1');
-// if (btnLevel1 !== null) {
-//     btnLevel1.addEventListener('ended', btnlevel1, false);
-//  }
+if (btnLevel1 !== null) {
+    btnLevel1.addEventListener('ended', btnlevel1, false);
+ }
 var btnLevel2 = document.querySelector('#btnLevel2');
 var btnLevel3 = document.querySelector('#btnLevel3');
 
