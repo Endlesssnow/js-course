@@ -7,10 +7,10 @@
     text-decoration: none;
     padding: .5em 1em;
     outline: none;
-    background: rgb(231, 231, 231);
+    background: rgb(201, 201, 201);
 }
 #btnLevel2:hover:not(:active) {
-    background: rgb(211, 211, 211);
+    background: rgb(182, 215, 253);
 }
 #btnLevel2:focus {
     top: 1px;
@@ -27,10 +27,10 @@
     text-decoration: none;
     padding: .5em 1em;
     outline: none;
-    background: rgb(231, 231, 231);
+    background: rgb(201, 201, 201);
 }
 #btnLevel3:hover:not(:active) {
-    background: rgb(211, 211, 211);
+    background: rgb(182, 215, 253);
 }
 #btnLevel3:focus {
     top: 1px;
@@ -46,10 +46,10 @@
     text-decoration: none;
     padding: .5em 1em;
     outline: none;
-    background: rgb(231, 231, 231);
+    background: rgb(201, 201, 201);
 }
 #btnLevel1:hover:not(:active) {
-  background: rgb(211, 211, 211);
+  background: rgb(182, 215, 253);
 }
 #btnLevel1:focus {
     top: 1px;
