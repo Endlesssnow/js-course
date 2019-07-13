@@ -1,0 +1,87 @@
+body{
+	margin: 30px;
+	font-family:, 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+#menu{
+	opacity: 0.8;
+	border: 3px solid 	#87CEFA;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 180px;
+	height: 28px;
+	background: white;
+	font-size: 24px;
+	color: #1E90FF;
+	position: relative;
+}
+
+#menu:hover{
+	opacity: 0.8;
+	background: #1E90FF;
+	color: white;
+	transition: background .2s ease-in-out;
+}
+
+
+#home{
+	opacity: 0.8;
+	cursor: pointer;
+	margin:2px 0px 0px 0px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top: 2px solid #87CEFA;
+	border-left: 2px solid #87CEFA;
+	border-right: 2px solid #87CEFA;
+	text-align: center;
+	width: 182px;
+	height: 28px;
+	background: white;
+	font-size: 21px;
+	color: #1E90FF;
+	transition: background .2s ease-in-out;
+}
+
+#feed{
+	opacity: 0.8;
+	cursor: pointer;
+	border-left: 2px solid #87CEFA;
+	border-right: 2px solid #87CEFA;
+	text-align: center;
+	width: 182px;
+	height: 28px;
+	background: white;
+	font-size: 21px;
+	color: #1E90FF;
+	transition: background .2s ease-in-out;
+}
+
+#store{
+	opacity: 0.8;
+	cursor: pointer;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left: 2px solid #87CEFA;
+	border-right: 2px solid #87CEFA;
+	border-bottom: 2px solid #87CEFA;
+	text-align: center;
+	width: 182px;
+	height: 28px;
+	background: white;
+	font-size: 21px;
+	color: #1E90FF;
+	transition: background .2s ease-in-out;
+}
+
+#home:hover{
+	background: #AFEEEE;
+}
+
+#feed:hover{
+	background: #AFEEEE;
+}
+
+#store:hover{
+	background: #AFEEEE;
+}
