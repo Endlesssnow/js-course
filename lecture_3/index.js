@@ -1,7 +1,5 @@
-var btnLevel1 = document.querySelector('#btnlevel1');
-if (btnLevel1 !== null) {
-    btnLevel1.addEventListener('ended', btnlevel1, false);
- }
+
+var btnLevel1 = document.querySelector('#btnLevel1');
 var btnLevel2 = document.querySelector('#btnLevel2');
 var btnLevel3 = document.querySelector('#btnLevel3');
 
@@ -13,12 +11,11 @@ ctntLevel1.style.display = 'none';
 ctntLevel2.style.display = 'none';
 ctntLevel3.style.display = 'none';
 
-btnLevel1.addEventListener('click', btnlevel1);
-function btnlevel1(){
+btnLevel1.addEventListener('click', function (){
     ctntLevel1.style.display = 'block';
     ctntLevel2.style.display = 'none';
     ctntLevel3.style.display = 'none';
-}
+})
 
 btnLevel2.addEventListener('click', function(){
     ctntLevel1.style.display = 'none';
