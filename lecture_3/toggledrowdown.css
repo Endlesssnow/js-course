@@ -1,9 +1,12 @@
 body{
 	margin: 30px;
-	font-family:, 'Lucida Grande', 'Lucida Sans Unicode';
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
+
+
 #menu{
+	content: Another action;
 	opacity: 0.8;
 	border: 3px solid 	#87CEFA;
 	border-radius: 5px;
@@ -12,7 +15,7 @@ body{
 	width: 180px;
 	height: 28px;
 	background: white;
-	font-size: 24px;
+	font-size: 20px;
 	color: #1E90FF;
 	position: relative;
 }
@@ -25,7 +28,7 @@ body{
 }
 
 
-#home{
+#action{
 	opacity: 0.8;
 	cursor: pointer;
 	margin:2px 0px 0px 0px;
@@ -38,12 +41,13 @@ body{
 	width: 182px;
 	height: 28px;
 	background: white;
-	font-size: 21px;
+	font-size: 18px;
 	color: #1E90FF;
 	transition: background .2s ease-in-out;
 }
 
-#feed{
+#anotherAction{
+	content: "Another action";
 	opacity: 0.8;
 	cursor: pointer;
 	border-left: 2px solid #87CEFA;
@@ -52,12 +56,12 @@ body{
 	width: 182px;
 	height: 28px;
 	background: white;
-	font-size: 21px;
+	font-size: 18px;
 	color: #1E90FF;
 	transition: background .2s ease-in-out;
 }
 
-#store{
+#mayBeAction{
 	opacity: 0.8;
 	cursor: pointer;
 	border-bottom-left-radius: 3px;
@@ -69,19 +73,34 @@ body{
 	width: 182px;
 	height: 28px;
 	background: white;
-	font-size: 21px;
+	font-size: 18px;
 	color: #1E90FF;
 	transition: background .2s ease-in-out;
 }
 
-#home:hover{
+#menu:before{
+	content: "Toggle dropdown";
+}
+#mayBeAction:before{
+	content: "May be action";
+}
+
+#anotherAction:before{
+	content: "Another action";
+}
+
+#action:before{
+	content: "Action";
+}
+
+#action:hover{
 	background: #AFEEEE;
 }
 
-#feed:hover{
+#anotherAction:hover{
 	background: #AFEEEE;
 }
 
-#store:hover{
+#mayBeAction:hover{
 	background: #AFEEEE;
 }
