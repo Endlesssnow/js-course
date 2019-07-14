@@ -24,29 +24,13 @@ containerToggleDD.appendChild(mayBeActionToggleDD);
 
 document.body.appendChild(fragToggleDD);
 
-var menuToggleDD = document.querySelector('#menu');
-
-var actionToggleDD = document.querySelector('#action');
-var anotherActionToggleDD = document.querySelector('#anotherAction');
-var store = document.querySelector('#mayBeAction');
-
-var click = 0;
-
-actionToggleDD.style.display = 'none';
-anotherActionToggleDD.style.display = 'none';
-mayBeActionToggleDD.style.display = 'none';
+containerToggleDD.style.display = 'none';
 
 menuToggleDD.addEventListener('click', function(){
-if (click === 1){
-	actionToggleDD.style.display = 'none';
-	anotherActionToggleDD.style.display = 'none';
-	mayBeActionToggleDD.style.display = 'none';
-	click = 0;
+if (containerToggleDD.style.display == 'none'){
+	containerToggleDD.style.display = 'block';
 }else {
-	actionToggleDD.style.display = 'block';
-	anotherActionToggleDD.style.display = 'block';
-	mayBeActionToggleDD.style.display = 'block';
-	click = 1;
+	containerToggleDD.style.display = 'none';
 	}
 })
 
