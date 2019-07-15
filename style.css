@@ -14,10 +14,6 @@
     font-family: Tahoma;
 }
 
-
-
-
-
 html, body {
     min-height: 100vh;
     position: relative;
@@ -39,7 +35,6 @@ html, body {
     width:250px;
     display: inline-block;
 }
-
 
 div.completedTasks {
     margin: auto;
