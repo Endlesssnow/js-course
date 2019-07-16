@@ -51,7 +51,6 @@ sliderContainer.appendChild(spanContainer);
 spanContainer.appendChild(position1);
 spanContainer.appendChild(position2);
 spanContainer.appendChild(position3);
-
 document.body.appendChild(fragSlider);
 
 nextButton.addEventListener('click', function() {
@@ -71,7 +70,7 @@ position3.addEventListener('click', function() {
     slideTo(2);
 });
 
-var currentSlideNum = 1;
+var currentSlideNum = 0;
 showSlideNum(currentSlideNum);
 
 function slideNext(value) {
@@ -91,12 +90,17 @@ function showSlideNum(value) {
         currentSlideNum = 0;
     }    
     if (value < 0) {
-        currentSlideNum = slides.length - 1;
+        currentSlideNum = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
         positions[i].className = positions[i].className.replace("active", "");
+        console.log(slides);
+        console.log(positions);
     }
+    // for (i = 0; i < positions.length; i++) {
+       
+    // }
     slides[currentSlideNum].style.display = "block";  
-    positions[currentSlideNum].className += " active";
+    positions[currentSlideNum].className += "active";
 }
