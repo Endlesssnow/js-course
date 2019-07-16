@@ -97,6 +97,6 @@ function showSlideNum(value) {
     for (i = 1; i < positions.length; i++) {
         positions[i].className = positions[i].className.replace(" active", "");
     }
-    slides[currentSlideNum-1].style.display = "block";  
+    slides[currentSlideNum].style.display = "block";  
     positions[currentSlideNum-0].className += " active";
 }
