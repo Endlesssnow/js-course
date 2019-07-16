@@ -85,18 +85,20 @@ function showSlideNum(value) {
     var i;
     var slides = document.querySelectorAll('.slide');
     var positions = document.querySelectorAll('.position');
+    
     if (value > slides.length) {
         currentSlideNum = 1;
     }    
     if (value < 1) {
         currentSlideNum = slides.length;
     }
-    for (i = 1; i < slides.length; i++) {
+    for (i = 1; i <= slides.length; i++) {
         slides[i].style.display = "none";  
+        positions[i].className = positions[i].className.replace("active", "");
     }
-    for (i = 1; i < positions.length; i++) {
-        positions[i].className = positions[i].className.replace(" active", "");
-    }
+    // for (i = 1; i <= positions.length; i++) {
+        
+    // }
     slides[currentSlideNum].style.display = "block";  
-    positions[currentSlideNum-0].className += " active";
+    positions[currentSlideNum-0].className += "active";
 }
