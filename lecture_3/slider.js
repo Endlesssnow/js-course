@@ -100,5 +100,5 @@ function showSlideNum(value) {
        
     // }
     slides[currentSlideNum].style.display = "block";  
-    positions[currentSlideNum-1].className += "active";
+    positions[currentSlideNum].className += "active";
 }
