@@ -94,7 +94,7 @@ function showSlideNum(value) {
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
-        positions[i].className = positions[i].className.replace("active", "");
+        // positions[i].className = positions[i].className.replace("active", "");
     }
     // for (i = 0; i < positions.length; i++) {
        
