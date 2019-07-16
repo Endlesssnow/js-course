@@ -15,7 +15,7 @@ img {vertical-align: middle;}
     left: 590px;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 300px;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -30,7 +30,7 @@ img {vertical-align: middle;}
 .prevButton {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 300px;
     width: auto;
     padding: 16px;
     margin-top: -22px;

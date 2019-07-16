@@ -66,11 +66,11 @@ position1.addEventListener('click', function() {
 position2.addEventListener('click', function() {
     slideTo(1);
 });
-position2.addEventListener('click', function() {
+position3.addEventListener('click', function() {
     slideTo(2);
 });
 
-var currentSlideNum = 1;
+var currentSlideNum = 0;
 showSlideNum(currentSlideNum);
 
 function slideNext(value) {
