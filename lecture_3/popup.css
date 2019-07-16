@@ -1,4 +1,9 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
 #button {
+    box-shadow: 4px 4px 8px rgb(155, 155, 155);
     width: 150px;
     height: 60px;
     display: inline-block;
