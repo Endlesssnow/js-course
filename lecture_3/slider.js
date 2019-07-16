@@ -61,16 +61,16 @@ prevButton.addEventListener('click', function() {
 });
 
 position1.addEventListener('click', function() {
-    slideTo(1);
+    slideTo(0);
 });
 position2.addEventListener('click', function() {
-    slideTo(2);
+    slideTo(1);
 });
 position3.addEventListener('click', function() {
-    slideTo(3);
+    slideTo(2);
 });
 
-var currentSlideNum = 1;
+var currentSlideNum = 0;
 showSlideNum(currentSlideNum);
 
 function slideNext(value) {
@@ -85,20 +85,20 @@ function showSlideNum(value) {
     var i;
     var slides = document.querySelectorAll('.slide');
     var positions = document.querySelectorAll('.position');
-    
-    if (value > slides.length) {
-        currentSlideNum = 1;
+
+    if (value > slides.length-1) {
+        currentSlideNum = 0;
     }    
-    if (value < 1) {
+    if (value < 0) {
         currentSlideNum = slides.length;
     }
-    for (i = 1; i <= slides.length; i++) {
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
         positions[i].className = positions[i].className.replace("active", "");
     }
-    // for (i = 1; i <= positions.length; i++) {
-        
+    // for (i = 0; i < positions.length; i++) {
+       
     // }
     slides[currentSlideNum].style.display = "block";  
-    positions[currentSlideNum-0].className += "active";
+    positions[currentSlideNum-1].className += "active";
 }
