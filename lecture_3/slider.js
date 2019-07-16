@@ -70,7 +70,7 @@ position3.addEventListener('click', function() {
     slideTo(2);
 });
 
-var currentSlideNum = 0;
+var currentSlideNum = 1;
 showSlideNum(currentSlideNum);
 
 function slideNext(value) {
@@ -98,5 +98,5 @@ function showSlideNum(value) {
         positions[i].className = positions[i].className.replace(" active", "");
     }
     slides[currentSlideNum-1].style.display = "block";  
-    positions[currentSlideNum-1].className += " active";
+    positions[currentSlideNum-0].className += " active";
 }
