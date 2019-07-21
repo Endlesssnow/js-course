@@ -25,6 +25,7 @@ html, body {
     width: 100%;
 }
 .box {
+    display: flex;
     white-space: inherit;
 }
 .box div {
@@ -32,7 +33,7 @@ html, body {
     margin-left: 2%;
     margin-right: 2%;
     padding: 10px;
-    width:250px;
+    width:290px;
     display: inline-block;
 }
 
