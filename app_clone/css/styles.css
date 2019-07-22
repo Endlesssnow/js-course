@@ -315,7 +315,7 @@ body {
 
 .section-header {
   color: white;
-  background: url("..app/app_clone/img/chelovek_les_sneg_zima_derevya_119203_3840x2160.jpg") no-repeat 50% 50%;
+  background: url("app/app_clone/img/chelovek_les_sneg_zima_derevya_119203_3840x2160.jpg") no-repeat 50% 50%;
   background: cover; }
   .section-header .section-inner {
     display: flex;
