@@ -1,0 +1,162 @@
+@import 'normalize.scss';
+
+// === Mixins ===
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// === / Mixins ===
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include font-lato;
+}
+.section-outer {}
+
+.section-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.section-header {
+    color: white;
+    background: url('../img/chelovek_les_sneg_zima_derevya_119203_3840x2160.jpg') no-repeat 50% 50%;
+    background: cover;
+
+    .section-inner{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+        z-index: 10;
+    }
+
+    &::before{
+        z-index: 5;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(20, 39, 41, .6);
+        height: 200px;
+    }
+
+    &-logo{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 30px;
+        flex-shrink: 1;
+    }
+    &-content{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    &-wrapper{
+        width: 1020px;
+        margin: 0 auto; //Под вопросом
+        &__form{
+            display: flex;
+                &-input{
+                    padding-right: 40px;
+                    flex: 1;
+                    input{
+                        @include font-montserrat;
+                        font-size: 16px;
+                        border: none;
+                        color: white;
+                        background: rgba(255, 255, 255, .25);
+                        margin: 0;
+                        padding: 13px 20px;
+                        outline: none;
+                        border-radius: 2px;
+                        width: 100%;
+                        &::placeholder{
+                            color: white;
+                        }
+                    }
+                    &-email{
+                        display: block;
+                    }
+                    &-password{
+                        display: block;
+                    }
+                }    
+            &-container{
+                display: flex;
+                &-button{
+                    flex: 1;
+                    padding-right: 15px;
+                    button{
+                        @include font-montserrat;
+                        height: 43.48px;
+                        width: 120px;
+                        font-size: 16px;
+                        border: none;
+                        color: white;
+                        background: #74989e;
+                        margin: 0;
+                        padding: 13px 20px;
+                        outline: none;
+                        border-radius: 2px;
+                    }
+                    button:hover {
+                        background: rgb(221, 30, 30);
+                    }
+                    // &-sign-in:active .section-header-wrapper{
+                    //     display: none;
+                    // }
+                }
+            }    
+        }
+    }
+}
+
+.section-profile {
+    background: #505050;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    &-content{
+        @include font-montserrat;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        &-info{}
+    }
+    &-search{
+        &__form-input{
+            font-size: 16px;
+                border: none;
+                color: white;
+                background: rgba(255, 255, 255, .25);
+                margin: 0;
+                padding: 4px 8px;
+                outline: none;
+                border-radius: 2px;
+                width: 100%;
+                &::placeholder{
+                    color: white;
+                }
+        }
+    }
+}
+
+.section-photo {
+    background: linear-gradient(to top, #74989e, #a0a0a0);
+    .section-inner-photo {
+      img  {
+        margin-top: 10px;
+        justify-content: space-between;
+        border: 3px solid #585858;
+    }}
+}

@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <style>
+        input[type="text"]::placeholder { color: #ffffff; } 
+    </style> -->
 </head>
-
 <body>
-    <header class="withPadding">
-        <nav class="fullWidth">
-            <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/subsurface-icon-icon.png" alt="logo" width="40px">
-            <span id="app-name">Winter Nook</span>
-            <span id="user-profile">
-                <span id="user-name">Anastasya Erokhina</span><br>
-                <span>
-                    <span>1965 Post</span>
-                    |
-                    <span>3 Followers</span>
-                    |
-                    <span>18 Following</span>
-                </span>
-            </span>
-            <img src="https://img.icons8.com/material-sharp/24/000000/user-male-circle.png" alt="user icon" width="40px">
-        </nav>
-    </header>
-    <main>
-        <section id="user-info" class="withPadding">
-            <input name="search" id="search" placeholder="search" type="text">
-            <label for="search"></label>
-        </section>
-        <article id="images" class="withPadding">
-            <img src="https://source.unsplash.com/640x640/?winter,shower" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,winter" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,snowstorm" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,ice" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,snowfall" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,whiteout" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,snow" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,christmas" alt="photo">
-            <img src="https://source.unsplash.com/640x640/?winter,blizzard" alt="photo">
-        </article>
-    </main>
-    <footer class="fullWidth">
-        (c) The Winter is coming!
-    </footer>
-</body>
+    <!-- Header -->
+    <section class="section-outer section-header">
+        <div class="section-inner">
+            <div class="section-header-logo">Winter Nook</div>
+            <div class="section-header-content">
+                <div class="section-header-wrapper">
+                    <div class="section-header-wrapper__form">
+                        <div class="section-header-wrapper__form-input">
+                            <input class="section-header-wrapper__form-input-email" type="text" placeholder="Your Email">
+                        </div>
+                        <div class="section-header-wrapper__form-input">
+                            <input  class ="section-header-wrapper__form-input-password" type="password" placeholder="Your Password">
+                        </div>
+                        <div class="section-header-wrapper__form-container">
+                            <div class="section-header-wrapper__form-container-button">
+                                <button class="section-header-wrapper__form-container-button-sign-in">Sing In</button>
+                            </div>
+                            <div class="section-header-wrapper__form-container-button">
+                                <button class="section-header-wrapper__form-container-button-sign-up">Sing Up</button>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Header -->
+    <section class="section-outher section-profile">
+        <div class="section-inner">
+            <div class="section-profile-content">
+                <div class="section-profile-search">
+                    <input name="search" class="section-profile-search__form-input" placeholder="Search" type="text">
+                    <label for="search"></label>
+                </div>
+                <div class="section-profile-info">
+                    Followers 10 | Following 7 | Post 17
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Photo -->
+    <section class="section-outer section-photo">
+        <div class="section-inner">
+            <article class="section-inner-photo">
+                <img src="https://source.unsplash.com/640x640/?winter,winter" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,snowstorm" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,ice" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,snowfall" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,whiteout" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,snow" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,christmas" alt="photo">
+                <img src="https://source.unsplash.com/640x640/?winter,blizzard" alt="photo">
+            </article>
+        </div>
+    </section>
+     <!-- / Photo -->
 
+    <!-- Footer -->
+    <section class="section-outer section-footer">
+        <div class="section-inner">
+            section-footer
+        </div>
+    </section>
+    <!-- / Footer -->
+<script src="js/button.js"></script>
+</body>
 </html>
