@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Lecture_5</title>
 </head>
 <body>
-    <button class="button">Click me!</button>
-    <script src='index.js'></script>
+
+    <span>Регистрация: </span>
+    <form action="" id="sign-up" name="signUp">
+        <input type="email" name="email" placeholder="Your Email">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <span>Авторизация: </span>
+    <form action="" id="sign-in" name="signIN">
+        <input type="email" name="email" placeholder="Your Email">
+        <input type="password" name="password" placeholder="Your Password">
+        <input type="submit" name="submit" value="Log in">
+    </form>
+
+    <span>Комментарии: </span>
+    <form action="" id="comments" name="comments">
+        <input type="text" name="message" placeholder="Add comment">
+        <input type="text" name="parentId" placeholder="Add parentID (optional)">
+        <input type="submit" name="submit" value="Send">
+    </form>
+    <div class = "comments" id="cmnt">    </div>
+
+    <span>Загрузка картинок: </span>
+    <form action="" id="img-load" name="img_load">
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Loading">
+    </form>
+
+    <script src="index.js"></script>
 </body>
 </html>

@@ -347,6 +347,20 @@ body {
     margin: 0 auto; }
     .section-header-wrapper__form {
       display: flex; }
+      .section-header-wrapper__form-register-input input {
+        font-family: 'Montserrat', sans-serif;
+        display: none;
+        font-size: 16px;
+        border: none;
+        color: white;
+        background: rgba(255, 255, 255, 0.25);
+        margin: 0;
+        padding: 13px 20px;
+        outline: none;
+        border-radius: 2px;
+        width: 100%; }
+        .section-header-wrapper__form-register-input input::placeholder {
+          color: white; }
       .section-header-wrapper__form-input {
         padding-right: 40px;
         flex: 1; }

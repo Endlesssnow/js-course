@@ -1,9 +1,11 @@
-var popup = document.querySelector('.section-header-wrapper__form-input-email');
-var popup2 = document.querySelector('.section-header-wrapper__form-input-password');
-
+var popup = document.querySelector('.section-header-wrapper');
+var popup2 = document.querySelectorAll(".section-header-wrapper__form-input-email, .section-header-wrapper__form-input-password, .section-header-wrapper__form-container-button-sign-in");
+// var popup2 = document.querySelector('.section-header-wrapper__form-input-password');
+console.log(popup2);
 var open = document.querySelector('.section-header-wrapper__form-container-button-sign-in');
-popup.style.display = 'block'
-popup2.style.display = 'block'
+var open2 = document.querySelector('.section-header-wrapper__form-container-button-sign-up');
+popup.style.display = 'block';
+popup2[0].style.display = 'block';
 
 open.addEventListener("click",      function() {
 
@@ -13,10 +15,10 @@ open.addEventListener("click",      function() {
     
   });
 
-open.addEventListener("click",      function() {
+open2.addEventListener("click",      function() {
 
-    if(popup2.style.display == 'block') 
-        popup2.style.display = 'none';
-    else popup2.style.display = 'block'
+    if(popup2[0].style.display == 'block') 
+        popup2[0].style.display = 'none';
+    else popup2[0].style.display = 'block'
     
 });
