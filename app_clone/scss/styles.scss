@@ -63,9 +63,9 @@ body {
     }
     &-wrapper{
         width: 1020px;
-        margin: 0 auto; //Под вопросом
+        // margin: 0 auto; //Под вопросом
         &__form{
-            display: flex;
+            // display: flex;
             &-register{
                 &-input{
                     input{
@@ -104,18 +104,22 @@ body {
                             color: white;
                         }
                     }
-                    &-email{
-                        display: block;
-                    }
-                    &-password{
-                        display: block;
-                    }
+                    // &-email{
+                    //     display: block;
+                    // }
+                    // &-password{
+                    //     display: block;
+                    // }
                 }    
-            &-container{
-                display: flex;
+            &-container{                   
+                // width: 1020px;
+                // display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
                 &-button{
-                    flex: 1;
-                    padding-right: 15px;
+                    // flex: 1;
+                    padding-top: 15px;
+                    padding-left: 2.5%;
                     button{
                         @include font-montserrat;
                         height: 44.18px;
@@ -132,9 +136,6 @@ body {
                     button:hover {
                         background: rgb(221, 30, 30);
                     }
-                    // &-sign-in:active .section-header-wrapper{
-                    //     display: none;
-                    // }
                 }
             }    
         }
@@ -156,17 +157,17 @@ body {
     &-search{
         &__form-input{
             font-size: 16px;
-                border: none;
+            color: white;
+            background: rgba(255, 255, 255, .25);
+            margin: 0;
+            padding: 4px 8px;
+            outline: none;
+            border-radius: 2px;
+            width: 100%;
+            border: none;
+            &::placeholder{
                 color: white;
-                background: rgba(255, 255, 255, .25);
-                margin: 0;
-                padding: 4px 8px;
-                outline: none;
-                border-radius: 2px;
-                width: 100%;
-                &::placeholder{
-                    color: white;
-                }
+            }
         }
     }
 }
@@ -174,7 +175,7 @@ body {
 .section-photo {
     background: linear-gradient(to top, #74989e, #a0a0a0);
     .section-inner-photo {
-      img  {
+      img{
         margin-top: 10px;
         justify-content: space-between;
         border: 3px solid #585858;
