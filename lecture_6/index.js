@@ -24,7 +24,7 @@ var requestTemplate = (function(){
             })
         }
     }
-})
+})();
 
 var heandleRouting = (function () {
     var previousHash;
