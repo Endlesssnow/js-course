@@ -19,6 +19,7 @@ var heandleRouting = (function () {
             return;
         }
         if(routes.hasOwnProperty(hash)){
+            previousHash = hash;
             console.log(routes[hash]);
         }
     }    
