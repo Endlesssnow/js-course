@@ -1,8 +1,15 @@
+    
 var routes = {
-    '': 'home/home.html',
-    'feed': 'feed/feed.html',
-    'login': 'login/login.html',
-}
+	'': {
+		html: 'home/home.html'
+	},
+	'feed': {
+		html: 'feed/feed.html',
+	},
+	'login': {
+		html: 'login/login.html'
+	}
+};
 
 var heandleRouting = (function () {
     var previousHash;
