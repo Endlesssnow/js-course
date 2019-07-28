@@ -32,7 +32,7 @@ formSignIn.addEventListener('submit', function(event){
     let formData = formToJson(formSignIn);
     console.log(formData);
     let headers = {'Content-Type': 'application/json'};
-    doRequest(urlAct, 'POST', formData, headers, 'login');
+    doRequest(urlAct, 'POST', formData, headers, 'login')
 });
 
 //Main function
@@ -46,15 +46,20 @@ function doRequest(url, method, formData, headers, options) {
     ).then(
         json => {
             console.log(json);
-            if(json._id) {
-                let formId = JSON.stringify({'id': json._id});
-                if(options == 'signUp') {
-                    doRequest('/identification/activate', 'POST', formId, headers, 'activate');
+            if(options == 'signUp'){ 
+                if(json._id) { 
+                let formId = JSON.stringify({'id': json._id}); 
+                doRequest('/identification/activate', 'POST', formId, headers, 'activate'); 
+                } else alert('Такой пользователь уже зарегистрирован'); 
                 }
-            }
+            if (options == 'activate') {
+                if (json.error) checkSignUp = json.error;
+                else alert('Пароль выслан на почту');
+            };
             if(options == 'login'){
                 if(json.token){
                     tokenStr = json.token;
+                    alert('Вы вошли!');
                     console.log('Токен записан');
                 }
             }
