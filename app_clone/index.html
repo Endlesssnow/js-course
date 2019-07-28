@@ -7,9 +7,6 @@
     <title>App Clone</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <!-- <style>
-        input[type="text"]::placeholder { color: #ffffff; } 
-    </style> -->
 </head>
 <body>
     <!-- Header -->
@@ -19,28 +16,50 @@
             <div class="section-header-content">
                 <div class="section-header-wrapper">
                     <div class="section-header-wrapper__form">
-                        <!-- <div class="section-header-wrapper__form-input">
-                            <input class="section-header-wrapper__form-input-email" type="text" placeholder="Your Email">
-                        </div>
-                        <div class="section-header-wrapper__form-input">
-                            <input  class ="section-header-wrapper__form-input-password" type="password" placeholder="Your Password">
-                        </div>
 
                         <div class="section-header-wrapper__form-register">
                             <div class="section-header-wrapper__form-register-input">
                                 <input  class ="section-header-wrapper__form-input-reg-email" type="text" placeholder="Your Email">
                             </div>
-                        </div> -->
+                        </div>
                         
                         <div class="section-header-wrapper__form-container">
-                            <div class="section-header-wrapper__form-container-button">
-                                <button class="section-header-wrapper__form-container-button-sign-in">Sing In</button>
+                            <div class="section-header-wrapper__form-container-login">
+
+                                <div class="section-header-wrapper__form-container-button">
+                                    <button class="section-header-wrapper__form-container-button-sign-in">Sing In</button>
+                                </div>
+
+                                <div class="section-header-wrapper__form-input">
+                                    <input class="section-header-wrapper__form-input-email" type="text" placeholder="Your Email">
+                                </div>
+
+                                <div class="section-header-wrapper__form-input">
+                                    <input  class ="section-header-wrapper__form-input-password" type="password" placeholder="Your Password">
+                                </div>
+
                             </div>
-                            <div class="section-header-wrapper__form-container-button">
-                                <button class="section-header-wrapper__form-container-button-sign-up">Sing Up</button>
+
+                            <div class="section-header-wrapper__form-container-register">
+
+                                <div class="section-header-wrapper__form-container-button">
+                                    <button class="section-header-wrapper__form-container-button-sign-up">Sing Up</button>
+                                </div>
+
+                                <div class="section-header-wrapper__form-input">
+                                    <input class="section-header-wrapper__form-input-email" type="text" placeholder="Your Email">
+                                </div>
+
                             </div>
-                        </div>    
+
+                        </div> 
+
+                        <!-- <div class="section-header-wrapper__form-profile">
+                            <img src="https://images.wallpaperscraft.ru/image/kot_goluboglazyy_morda_vzglyad_krasivyy_tolstyy_67176_300x188.jpg" alt="">
+                        </div>  -->
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -54,26 +73,13 @@
                     <label for="search"></label>
                 </div>
                 <div class="section-profile-info">
-                    Followers 10 | Following 7 | Post 17
+                    <a href="#/">Home</a>  | <a href="#/followers">Followers</a>  | <a href="#/post">Post</a> 
                 </div>
             </div>
         </div>
     </section>
     <!-- Photo -->
-    <section class="section-outer section-photo">
-        <div class="section-inner">
-            <article class="section-inner-photo">
-                <img src="https://source.unsplash.com/640x640/?winter,winter" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,snowstorm" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,ice" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,snowfall" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,whiteout" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,snow" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,christmas" alt="photo">
-                <img src="https://source.unsplash.com/640x640/?winter,blizzard" alt="photo">
-            </article>
-        </div>
-    </section>
+    <div id="container"></div>
      <!-- / Photo -->
 
     <!-- Footer -->
@@ -83,6 +89,6 @@
         </div>
     </section>
     <!-- / Footer -->
-<script src="js/button.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

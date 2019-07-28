@@ -60,13 +60,16 @@ body {
         flex-grow: 1;
         display: flex;
         align-items: center;
+       
     }
     &-wrapper{
         width: 1020px;
         // margin: 0 auto; //Под вопросом
         &__form{
+            
             // display: flex;
             &-register{
+                
                 &-input{
                     input{
                         @include font-montserrat;
@@ -76,7 +79,7 @@ body {
                         color: white;
                         background: rgba(255, 255, 255, .25);
                         margin: 0;
-                        padding: 13px 20px;
+                        // padding: 13px 20px;
                         outline: none;
                         border-radius: 2px;
                         width: 100%;
@@ -87,7 +90,9 @@ body {
                 }
             }
                 &-input{
-                    padding-right: 40px;
+                    padding-right: 0px;
+                    padding-top: 15px;
+                    padding-left: 30px;
                     flex: 1;
                     input{
                         @include font-montserrat;
@@ -111,15 +116,23 @@ body {
                     //     display: block;
                     // }
                 }    
-            &-container{                   
+            &-container{ 
+                padding-left: 30px;  
+                &-login{
+                    display: flex;
+                }   
+                &-register{
+                    display: flex;
+                }     
+                     
                 // width: 1020px;
-                // display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
+                // 
+                // flex-direction: row;
+                // justify-content: flex-end;
                 &-button{
                     // flex: 1;
                     padding-top: 15px;
-                    padding-left: 2.5%;
+                    // padding-left: 2.5%;
                     button{
                         @include font-montserrat;
                         height: 44.18px;
@@ -129,7 +142,7 @@ body {
                         color: white;
                         background: #74989e;
                         margin: 0;
-                        padding: 13px 20px;
+                        // padding: 13px 20px;
                         outline: none;
                         border-radius: 2px;
                     }
@@ -172,6 +185,13 @@ body {
     }
 }
 
+.home{
+    z-index:5;
+    width: 1349px;
+    height: 720px;
+    background: url('https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_2560x1440.jpg') no-repeat 50% 50%;
+}
+
 .section-photo {
     background: linear-gradient(to top, #74989e, #a0a0a0);
     .section-inner-photo {
@@ -180,4 +200,12 @@ body {
         justify-content: space-between;
         border: 3px solid #585858;
     }}
+}
+
+#container{
+    width: 1349px;
+    height: 720px;
+    z-index: 1;
+    background: #74989e;
+    // background: url('https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_2560x1440.jpg') no-repeat 50% 50%;
 }

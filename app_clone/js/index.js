@@ -2,12 +2,12 @@ var routes = {
 	'': {
 		html: 'home/home.html'
 	},
-	'feed': {
-		html: 'feed/feed.html',
-		src: './feed/feed.js'
+	'post': {
+		html: 'post/post.html',
+		src: './post/post.js'
 	},
-	'content': {
-		html: 'content/content.html'
+	'followers': {
+		html: 'followers/followers.html'
 	}
 };
 

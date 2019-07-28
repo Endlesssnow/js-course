@@ -352,14 +352,15 @@ body {
       color: white;
       background: rgba(255, 255, 255, 0.25);
       margin: 0;
-      padding: 13px 20px;
       outline: none;
       border-radius: 2px;
       width: 100%; }
       .section-header-wrapper__form-register-input input::placeholder {
         color: white; }
     .section-header-wrapper__form-input {
-      padding-right: 40px;
+      padding-right: 0px;
+      padding-top: 15px;
+      padding-left: 30px;
       flex: 1; }
       .section-header-wrapper__form-input input {
         font-family: 'Montserrat', sans-serif;
@@ -375,11 +376,13 @@ body {
         .section-header-wrapper__form-input input::placeholder {
           color: white; }
     .section-header-wrapper__form-container {
-      flex-direction: row;
-      justify-content: flex-end; }
+      padding-left: 30px; }
+      .section-header-wrapper__form-container-login {
+        display: flex; }
+      .section-header-wrapper__form-container-register {
+        display: flex; }
       .section-header-wrapper__form-container-button {
-        padding-top: 15px;
-        padding-left: 2.5%; }
+        padding-top: 15px; }
         .section-header-wrapper__form-container-button button {
           font-family: 'Montserrat', sans-serif;
           height: 44.18px;
@@ -389,7 +392,6 @@ body {
           color: white;
           background: #74989e;
           margin: 0;
-          padding: 13px 20px;
           outline: none;
           border-radius: 2px; }
         .section-header-wrapper__form-container-button button:hover {
@@ -418,9 +420,21 @@ body {
     .section-profile-search__form-input::placeholder {
       color: white; }
 
+.home {
+  z-index: 5;
+  width: 1349px;
+  height: 720px;
+  background: url("https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_2560x1440.jpg") no-repeat 50% 50%; }
+
 .section-photo {
   background: linear-gradient(to top, #74989e, #a0a0a0); }
   .section-photo .section-inner-photo img {
     margin-top: 10px;
     justify-content: space-between;
     border: 3px solid #585858; }
+
+#container {
+  width: 1349px;
+  height: 720px;
+  z-index: 1;
+  background: #74989e; }
