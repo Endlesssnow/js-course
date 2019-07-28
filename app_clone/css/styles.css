@@ -438,7 +438,8 @@ body {
   background: url("https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_1366x768.jpg") no-repeat 50% 50%; }
 
 .photo {
-  width: 1360px;
+  margin: 0 auto;
+  width: 100%;
   padding-left: 2%;
   background: #74989e;
   height: 100%; }
