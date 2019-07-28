@@ -1,10 +1,10 @@
 h1{
-    color: rgb(175, 218, 57);
+    color: rgb(212, 212, 212);
     border: 2px solid black;
 }
 
-div{
-    background: rgb(143, 224, 206);
+.content{
+    background: rgb(252, 38, 38);
     color: rgb(56, 66, 65);
 }
 
