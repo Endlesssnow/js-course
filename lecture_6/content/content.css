@@ -3,7 +3,7 @@ h1{
     border: 2px solid black;
 }
 
-.content{
+#content{
     background: rgb(252, 38, 38);
     color: rgb(56, 66, 65);
 }
