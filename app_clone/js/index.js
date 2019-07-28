@@ -63,7 +63,6 @@ var heandleRouting = (function () {
         if(routes.hasOwnProperty(hash)){
             previousHash = hash;
             var urls = routes[hash];
-            console.log(urls);
             console.log(routes[hash]);
             requestTemplate(urls.html).then( function (html){
                 console.log(html);
