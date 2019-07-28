@@ -4,7 +4,6 @@ var routes = {
 	},
 	'post': {
 		html: 'post/post.html',
-		// src: './post/post.js'
 	},
 	'followers': {
 		html: 'followers/followers.html'
@@ -34,29 +33,11 @@ var render = (function(){
     }
 })();
 
-// var runScript = (function(){
-//     var cache = {};
-
-//     return function(src){
-//         if(cache.hasOwnProperty(src)){
-//             cache[src]();
-//         } else {
-//             import(src).then(function(module){
-//                 cache[src] = module.default;
-//                 cache[src]();
-//             }).catch(function(err){
-//                 console.error(err);
-//             })
-//         }
-//     }
-// })();
 
 var heandleRouting = (function () {
     var previousHash;
-    console.log(previousHash)
     return function () {
         var hash = window.location.hash.split('#/')[1] || '';
-        console.log(hash);
         if (previousHash === hash){
             return;
         }
@@ -65,7 +46,6 @@ var heandleRouting = (function () {
             var urls = routes[hash];
             console.log(routes[hash]);
             requestTemplate(urls.html).then( function (html){
-                console.log(html);
                 render(html);
                 if(urls.hasOwnProperty('src')){
                     runScript(urls.src);
