@@ -4,7 +4,7 @@ var routes = {
 	},
 	'post': {
 		html: 'post/post.html',
-		src: './post/post.js'
+		// src: './post/post.js'
 	},
 	'followers': {
 		html: 'followers/followers.html'
@@ -34,22 +34,22 @@ var render = (function(){
     }
 })();
 
-var runScript = (function(){
-    var cache = {};
+// var runScript = (function(){
+//     var cache = {};
 
-    return function(src){
-        if(cache.hasOwnProperty(src)){
-            cache[src]();
-        } else {
-            import(src).then(function(module){
-                cache[src] = module.default;
-                cache[src]();
-            }).catch(function(err){
-                console.error(err);
-            })
-        }
-    }
-})();
+//     return function(src){
+//         if(cache.hasOwnProperty(src)){
+//             cache[src]();
+//         } else {
+//             import(src).then(function(module){
+//                 cache[src] = module.default;
+//                 cache[src]();
+//             }).catch(function(err){
+//                 console.error(err);
+//             })
+//         }
+//     }
+// })();
 
 var heandleRouting = (function () {
     var previousHash;
