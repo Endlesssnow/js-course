@@ -73,5 +73,5 @@ var heandleRouting = (function () {
     }    
 })();
 
-window.addEventListener('DOMContentLoader', heandleRouting);
+window.addEventListener('DOMContentLoaded', heandleRouting);
 window.addEventListener('hashchange', heandleRouting);
