@@ -4,16 +4,16 @@ let formSignIn = document.querySelector('#sign-in');
 let API = 'https://intern-staging.herokuapp.com/api';
 
 // Img Fragment
-let fragImg = document.createDocumentFragment(); 
-let imgFile = document.createElement('img'); 
-imgFile.className = 'imgFile'; 
-fragImg.appendChild(imgFile); 
+// let fragImg = document.createDocumentFragment(); 
+// let imgFile = document.createElement('img'); 
+// imgFile.className = 'imgFile'; 
+// fragImg.appendChild(imgFile); 
 
-//Comment Fragment
-let fragComment = document.createDocumentFragment();
-let commentDiv = document.createElement('div');
-commentDiv.className = 'commentDiv';
-fragComment.appendChild(commentDiv);
+// //Comment Fragment
+// let fragComment = document.createDocumentFragment();
+// let commentDiv = document.createElement('div');
+// commentDiv.className = 'commentDiv';
+// fragComment.appendChild(commentDiv);
 
 //Register
 formSignUp.addEventListener('submit', function(event){
@@ -81,38 +81,38 @@ function doRequest(url, method, formData, headers, options) {
 
 let tokenStr;
 
-//Comment
-let comment = document.forms.namedItem('comments');
-comment.addEventListener('submit', function(event){
-    event.preventDefault();
-    let formC = formToJson(comment);
-    console.log(formC);
-    doRequest('/comment', 'POST', formC, {'token': tokenStr, 'Content-Type': 'application/json'}, 'comment');
+// //Comment
+// let comment = document.forms.namedItem('comments');
+// comment.addEventListener('submit', function(event){
+//     event.preventDefault();
+//     let formC = formToJson(comment);
+//     console.log(formC);
+//     doRequest('/comment', 'POST', formC, {'token': tokenStr, 'Content-Type': 'application/json'}, 'comment');
     
-})
+// })
 
-//Img loading
-let form = document.forms.namedItem('img_load');
-form.addEventListener('submit', function(event){
-    let formD = new FormData(form);
-    formD.append('parentEntityId', 'id');
-    doRequest('/file', 'POST', formD, {'token': tokenStr}, 'file');
-    event.preventDefault();
-})
+// //Img loading
+// let form = document.forms.namedItem('img_load');
+// form.addEventListener('submit', function(event){
+//     let formD = new FormData(form);
+//     formD.append('parentEntityId', 'id');
+//     doRequest('/file', 'POST', formD, {'token': tokenStr}, 'file');
+//     event.preventDefault();
+// })
 
-//Comment create
-function getComment(msg){
-    let frg = fragComment.cloneNode(true); 
-    frg.lastChild.innerText = msg; 
-    document.querySelector('#cmnt').appendChild(frg);
-}
+// //Comment create
+// function getComment(msg){
+//     let frg = fragComment.cloneNode(true); 
+//     frg.lastChild.innerText = msg; 
+//     document.querySelector('#cmnt').appendChild(frg);
+// }
 
-//Img clone
-function getImg(url){
-    let frg = fragImg.cloneNode(true); 
-    frg.lastChild.src = url; 
-    document.body.appendChild(frg);
-}
+// //Img clone
+// function getImg(url){
+//     let frg = fragImg.cloneNode(true); 
+//     frg.lastChild.src = url; 
+//     document.body.appendChild(frg);
+// }
 
 //Convertation
 function formToJson(event) { 
