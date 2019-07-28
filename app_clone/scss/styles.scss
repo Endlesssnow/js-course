@@ -142,11 +142,12 @@ body {
                         color: white;
                         background: #74989e;
                         margin: 0;
-                        // padding: 13px 20px;
                         outline: none;
                         border-radius: 2px;
+                        border: 1px solid #333;
                     }
                     button:hover {
+                        box-shadow: 0 0 5px rgba(0,0,0,0.3);
                         background: rgb(221, 30, 30);
                     }
                 }
@@ -221,6 +222,34 @@ body {
     // height: 768px;
     background: #74989e;
 }
+
+
+a{
+    background: #74989e;
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: white; /* Цвет текста */
+}
+a:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: rgb(221, 30, 30); /* Градиент */
+    color: white;
+}
+
+// a {
+//     border: 1px solid #333; /* Рамка */
+//     display: inline-block;
+//     padding: 5px 15px; /* Поля */
+//     text-decoration: none; /* Убираем подчёркивание */
+//     color: #000; /* Цвет текста */
+//   }
+//    a:hover {
+//     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+//     background: rgb(221, 30, 30); /* Градиент */
+//     color: white;
+//    }
 
 // #container{
 //     width: 1349px;
