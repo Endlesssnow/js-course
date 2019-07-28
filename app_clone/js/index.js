@@ -28,9 +28,9 @@ var requestTemplate = (function(){
 })();
 
 var render = (function(){
-    var content = document.getElementById('container');
+    var container = document.getElementById('container');
     return function(html){
-        content.innerHTML = html;
+        container.innerHTML = html;
     }
 })();
 
