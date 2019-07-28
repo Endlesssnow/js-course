@@ -53,17 +53,20 @@ var render = (function(){
 
 var heandleRouting = (function () {
     var previousHash;
+    console.log(previousHash)
     return function () {
         var hash = window.location.hash.split('#/')[1] || '';
+        console.log(hash);
         if (previousHash === hash){
             return;
         }
         if(routes.hasOwnProperty(hash)){
             previousHash = hash;
             var urls = routes[hash];
+            console.log(urls);
             console.log(routes[hash]);
             requestTemplate(urls.html).then( function (html){
-                // console.log(html);
+                console.log(html);
                 render(html);
                 if(urls.hasOwnProperty('src')){
                     runScript(urls.src);
