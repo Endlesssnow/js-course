@@ -422,19 +422,24 @@ body {
 
 .home {
   z-index: 5;
-  width: 1349px;
-  height: 720px;
-  background: url("https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_2560x1440.jpg") no-repeat 50% 50%; }
+  width: 1366px;
+  height: 768px;
+  background: url("https://images.wallpaperscraft.ru/image/doroga_sneg_zima_144693_1366x768.jpg") no-repeat 50% 50%; }
 
-.section-photo {
-  background: linear-gradient(to top, #74989e, #a0a0a0); }
-  .section-photo .section-inner-photo img {
+.photo {
+  width: 1360px;
+  padding-left: 2%;
+  background: #74989e;
+  height: 100%; }
+  .photo .article-photo img {
     margin-top: 10px;
     justify-content: space-between;
     border: 3px solid #585858; }
 
-#container {
-  width: 1349px;
-  height: 720px;
-  z-index: 1;
+.followers {
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  width: 1366px;
+  height: 768px;
   background: #74989e; }
