@@ -14,12 +14,12 @@ console.log(el1, el2, el3, arr);
 // {name: 'Аноном', 'surname': 'Анонимович', 'age': '? лет'}.
 
 let user = {
-  name: 'Пётр',
-  surname: 'Петров',
-  age: '20 лет'
+  name: "Пётр",
+  surname: "Петров",
+  age: "20 лет"
 };
-let { name = 'Аноним', surname = 'Анонимович', age = '? лет' } = user;
-console.log(name + ' ' + surname + ' ' + age);
+let { name = "Аноним", surname = "Анонимович", age = "? лет" } = user;
+console.log(name + " " + surname + " " + age);
 
 // 3. Дан массив, выведите его элементы последовательно на экран в обратном порядке через for...of.
 
@@ -33,17 +33,17 @@ console.log(...array);
 var myStr = 'Дана строка. С помощью for...of подсчитайте количество букв "о" в ней.';
 var counter = 0;
 for (let i of myStr) {
-  if (i != 'о' && i != 'o') {
+  if (i != "о" && i != "o") {
   } else {
     counter++;
   }
 }
-console.log('Букв "о":'+ counter);
+console.log('Букв "о":' + counter);
 
 // 5.Сделайте функцию, которая получает имя пользователя и выводит на экран
 // 'Привет, Имя' (вместо Имя - полученное параметром имя).
 // По умолчанию (то есть если не передать параметр) функция должна выводить 'Привет, Аноним'.
-console.log('f(name)')
-function f(name = 'Аноним') {
-  console.log('Привет, ' + name);
+console.log("f(name)");
+function f(name = "Аноним") {
+  console.log("Привет, " + name);
 }
