@@ -1,34 +1,30 @@
 // 1. Дан массив. Запишите первый элемент этого массива в переменную elem1,
 // второй - в переменную elem2, третий - в переменную elem3,
 // а все остальные элементы массива - в переменную arr.
-console.log('1:');
 let array = [1, 2, 3, 4, 5, 6, 7];
 const [el1, el2, el3, ...arr] = array;
-console.log(el1, el2, el3, arr);
+console.log('task 1: ' + el1, el2, el3, arr);
 
 // 2. Дан объект {name: 'Петр', 'surname': 'Петров', 'age': '20 лет'}.
 // Запишите соответствующие значения в переменные name, surname и age.
 // Сделайте так, чтобы, если какое-то значение не задано -
 // оно принимало следующее значение по умолчанию:
 // {name: 'Аноном', 'surname': 'Анонимович', 'age': '? лет'}.
-console.log('2:');
 let user = {
   name: "Пётр",
   surname: "Петров",
   //age: "20 лет"
 };
 let { name = "Аноним", surname = "Анонимович", age = "? лет" } = user;
-console.log(name + " " + surname + " " + age);
+console.log('task 2: ' + name + " " + surname + " " + age);
 
 // 3. Дан массив, выведите его элементы последовательно на экран в обратном порядке через for...of.
-console.log('3:');
 for (let i of array) {
   array.sort((x, y) => y - x);
 }
-console.log(...array);
+console.log('task 3: ' + array);
 
 // 4. Дана строка. С помощью for...of подсчитайте количество букв 'о' в ней.
-console.log('4:');
 var myStr = 'Дана строка. С помощью for...of подсчитайте количество букв "о" в ней.';
 var counter = 0;
 for (let i of myStr) {
@@ -37,13 +33,12 @@ for (let i of myStr) {
     counter++;
   }
 }
-console.log('Букв "о":' + counter);
+console.log('task 4: ' + 'букв "о":' + counter);
 
 // 5.Сделайте функцию, которая получает имя пользователя и выводит на экран
 // 'Привет, Имя' (вместо Имя - полученное параметром имя).
 // По умолчанию (то есть если не передать параметр) функция должна выводить 'Привет, Аноним'.
-console.log('5:');
-console.log("f('name')");
+console.log('task 5: ' + "f('name')");
 function f(name = "Аноним") {
   console.log("Привет, " + name);
 }
