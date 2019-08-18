@@ -19,21 +19,21 @@ let { name = "Аноним", surname = "Анонимович", age = "? лет" 
 console.log('task 2: ' + name + " " + surname + " " + age);
 
 // 3. Дан массив, выведите его элементы последовательно на экран в обратном порядке через for...of.
-for (let i of array) {
-  array.sort((x, y) => y - x);
+array.reverse();
+console.log('task 3:');
+for(let i of array) {
+    console.log(i);    
 }
-console.log('task 3: ' + array);
 
 // 4. Дана строка. С помощью for...of подсчитайте количество букв 'о' в ней.
 var myStr = 'Дана строка. С помощью for...of подсчитайте количество букв "о" в ней.';
 var counter = 0;
 for (let i of myStr) {
-  if (i != "о" && i != "o") {
-  } else {
+  if (i == "о" || i == "o") {
     counter++;
   }
 }
-console.log('task 4: ' + 'букв "о":' + counter);
+console.log('task 4: ' + 'букв "о": ' + counter);
 
 // 5.Сделайте функцию, которая получает имя пользователя и выводит на экран
 // 'Привет, Имя' (вместо Имя - полученное параметром имя).
