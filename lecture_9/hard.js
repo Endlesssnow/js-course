@@ -1,4 +1,4 @@
-import Filter from "/filter.js";
+import Filter from "./filter.js";
 
 
 const filter = new Filter();
