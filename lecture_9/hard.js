@@ -2,7 +2,6 @@ import Filter from './filter.js';
 
 const filter = new Filter();
 
-
 const appDiv = document.getElementById('app');
 
 const sepiaBtn = document.createElement('button');
@@ -47,3 +46,14 @@ function onCanvasClick() {
     video.style.display = 'block';
     canvas.style.display = 'none';
 }
+
+// var sliders = ['red', 'green', 'blue'];
+//         sliders.forEach(function(attr) {
+//           var slider = document.getElementById(attr);
+//           function update() {
+//             lion[attr](parseFloat(slider.value));
+//             layer.batchDraw();
+//           }
+//           slider.oninput = update;
+//           update();
+//         });
