@@ -70,6 +70,3 @@ function unique(array) {
     }
     return result;
 }
-
-
-  
