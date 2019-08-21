@@ -41,6 +41,22 @@ function work(payload){
 const throttleUpdate = throttle(work, 1000);
 addEventListener('mousemove', throttleUpdate);
 
+function debounce(f, ms, instant) {
+	var timeOut;
+	return function() {
+    let context = this;
+    let args = arguments;
+		clearTimeout(timeOut);
+		timeOut = setTimeout(function() {
+			timeOut = null;
+      if (!instant) 
+      f.apply(context, args);
+		}, ms);
+    if (instant && !timeOut) 
+    f.apply(context, args);
+	};
+}
+
 
 function intersect(a, b) {
   let result = [];

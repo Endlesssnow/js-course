@@ -469,3 +469,97 @@ a:hover {
   background: #dd1e1e;
   /* Градиент */
   color: white; }
+
+#imgbtn {
+  outline: none;
+  background: #74989e;
+  border: 1px solid #333;
+  /* Рамка */
+  display: inline-block;
+  padding: 5px 15px;
+  /* Поля */
+  text-decoration: none;
+  /* Убираем подчёркивание */
+  color: white; }
+
+#imgbtn:hover {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Тень */
+  background: #dd1e1e;
+  /* Градиент */
+  color: white; }
+
+#span {
+  color: white; }
+
+input#file {
+  color: white; }
+
+#inputst {
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 4px 8px;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  border: none; }
+
+input#mess {
+  background: #74989e;
+  border: 1px solid #333;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+  outline: none; }
+
+div.commentDiv {
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 4px 8px;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  border: 1px solid #333; }
+
+div.commDiv {
+  font-size: 16px;
+  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 4px 8px;
+  margin: 0;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 2px;
+  width: 100%;
+  border: 1px solid #333; }
+
+button#getCom {
+  background: #74989e;
+  border: 1px solid #333;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+  outline: none; }
+
+button#getCom:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #dd1e1e;
+  color: white; }
+
+#mess:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #dd1e1e;
+  color: white; }

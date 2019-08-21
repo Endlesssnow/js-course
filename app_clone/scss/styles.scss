@@ -109,12 +109,7 @@ body {
                             color: white;
                         }
                     }
-                    // &-email{
-                    //     display: block;
-                    // }
-                    // &-password{
-                    //     display: block;
-                    // }
+
                 }    
             &-container{ 
                 padding-left: 30px;  
@@ -124,15 +119,11 @@ body {
                 &-register{
                     display: flex;
                 }     
-                     
-                // width: 1020px;
-                // 
-                // flex-direction: row;
-                // justify-content: flex-end;
+
                 &-button{
                     // flex: 1;
                     padding-top: 15px;
-                    // padding-left: 2.5%;
+
                     button{
                         @include font-montserrat;
                         height: 44.18px;
@@ -225,7 +216,6 @@ body {
     background: #74989e;
 }
 
-
 a{
     background: #74989e;
     border: 1px solid #333; /* Рамка */
@@ -240,22 +230,100 @@ a:hover {
     color: white;
 }
 
-// a {
-//     border: 1px solid #333; /* Рамка */
-//     display: inline-block;
-//     padding: 5px 15px; /* Поля */
-//     text-decoration: none; /* Убираем подчёркивание */
-//     color: #000; /* Цвет текста */
-//   }
-//    a:hover {
-//     box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
-//     background: rgb(221, 30, 30); /* Градиент */
-//     color: white;
-//    }
+#imgbtn{
+    outline: none;
+    background: #74989e;
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: white;
+}
 
-// #container{
-//     width: 1349px;
-//     z-index: 1;
-//     background: url('https://wallpaperscraft.ru/download/doroga_sneg_zima_144693/1366x768') no-repeat 50% 50%;
-// }
+#imgbtn:hover{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    background: rgb(221, 30, 30); /* Градиент */
+    color: white;
+}
+
+#span{
+    color: white;
+}
+
+input#file{
+    color: white;
+}
+
+#inputst{
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 255, 255, .25);
+    padding: 4px 8px;
+    margin: 0;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    border: none;
+}
+input#mess{
+    background: #74989e;
+    border: 1px solid #333;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 15px; 
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+div.commentDiv{
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 255, 255, .25);
+    padding: 4px 8px;
+    margin: 0;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+div.commDiv{
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 255, 255, .25);
+    padding: 4px 8px;
+    margin: 0;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+button#getCom{
+    background: #74989e;
+    border: 1px solid #333; 
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 15px; 
+    text-decoration: none; 
+    color: white;
+    outline: none;
+}
+
+button#getCom:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); 
+    background: rgb(221, 30, 30); 
+    color: white;
+}
+#mess:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); 
+    background: rgb(221, 30, 30); 
+    color: white;
+}
 

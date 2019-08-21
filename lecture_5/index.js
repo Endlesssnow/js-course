@@ -15,9 +15,13 @@ let commentDiv = document.createElement('div');
 commentDiv.className = 'commentDiv';
 fragComment.appendChild(commentDiv);
 
+//Get Comment
+let getComment = document.querySelector('#comments');
+
 //Register
 formSignUp.addEventListener('submit', function(event){
     event.preventDefault();
+    
     let url = '/identification';
     let formData = formToJson(formSignUp);
     console.log(formData);
@@ -34,6 +38,16 @@ formSignIn.addEventListener('submit', function(event){
     let headers = {'Content-Type': 'application/json'};
     doRequest(urlAct, 'POST', formData, headers, 'login');
 });
+
+//Get comment
+getComment.addEventListener('submit', function(event){
+    event.preventDefault();
+    let urlGetComment = '/comment?parentId={parentId}';
+    let formData = formToJson(getComment);
+    console.log(formData);
+    let headers = {'Content-Type': 'application/json'};
+    doRequest(urlGetComment, 'GET', formData, headers, 'getComment');
+})
 
 //Main function
 function doRequest(url, method, formData, headers, options) {
@@ -72,6 +86,10 @@ function doRequest(url, method, formData, headers, options) {
                 if(json.message){
                     getComment(json.message)
                 }
+            if(options == 'getComment'){
+                tokenStr = json.token;
+                const comments = {};
+            }
             }
         }
     );

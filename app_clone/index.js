@@ -1,12 +1,14 @@
 var routes = {
 	'': {
-		html: 'home/home.html'
+        html: 'home/home.html',
+        src: './home/home.js'
 	},
 	'post': {
 		html: 'post/post.html',
 	},
 	'followers': {
-		html: 'followers/followers.html'
+        html: 'followers/followers.html',
+        src: './followers/followers.js'
 	}
 };
 
@@ -26,12 +28,28 @@ var requestTemplate = (function(){
     }
 })();
 
-var render = (function(){
-    var container = document.getElementById('container');
-    return function(html){
-        container.innerHTML = html;
-    }
+var runScript = (function () { 
+    var cache = {}; 
+    return function (src) {  
+        if(cache.hasOwnProperty(src)){ 
+            cache[src](); 
+        } else { 
+        import(src).then(function (module) { 
+        cache[src] = module.default; 
+        cache[src](); 
+        }).catch( function (err) { 
+            console.error(err); 
+        }) 
+        } 
+    } 
 })();
+
+    var render = (function(){
+        var container = document.getElementById('container');
+        return function(html){
+            container.innerHTML = html;
+        }
+    })();
 
 
 var heandleRouting = (function () {
