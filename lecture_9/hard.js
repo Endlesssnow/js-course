@@ -46,14 +46,3 @@ function onCanvasClick() {
     video.style.display = 'block';
     canvas.style.display = 'none';
 }
-
-// var sliders = ['red', 'green', 'blue'];
-//         sliders.forEach(function(attr) {
-//           var slider = document.getElementById(attr);
-//           function update() {
-//             lion[attr](parseFloat(slider.value));
-//             layer.batchDraw();
-//           }
-//           slider.oninput = update;
-//           update();
-//         });
